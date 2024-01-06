@@ -36,6 +36,6 @@ Fc = [0;0;0;0;0;-params.dyn.mass*params.dyn.grav];
 Fb = Fb + transpose(Adjoint(Tcb))*Fc;
 
 
-dVbdt = Gb_inv*(ad(Vb)*Gb*Vb + Fb);
+dVbdt = Gb_inv*(transpose(ad(Vb))*Gb*Vb + Fb);
 
 end
