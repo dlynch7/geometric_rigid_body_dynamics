@@ -17,7 +17,7 @@
 
 function params = init_params(body_name,dimensions)
 
-params.dyn.grav = 0; % acceleration [m/s^2] due to gravity
+params.dyn.grav = 9.81; % acceleration [m/s^2] due to gravity
 params.dyn.mass = 1; % rigid body mass [kg]
 
 switch body_name
