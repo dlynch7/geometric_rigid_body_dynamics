@@ -39,4 +39,4 @@ These results make sense in light of gravity exerting a constant influence on th
 
 One metrics for how well the numerical integrator preserves the geometry of the problem is the determinant of $R_\mathrm{wb}$ (the rotational component of configuration $T_\mathrm{wb}$). Specifically, $\det\left(R_\mathrm{wb}\right)$ should equal $1$ for all time and, sure enough, it does.
 
-The Modern Robotics library also provides a function `DistanceToSE3()` that uses the Frobenius norm to compute a metric for how close $T_\mathrm{wb}$ is to $SE(3)$; from the plot above, $T_\mathrm{wb}$ stays in $SE(3)$ for all time.
+The Modern Robotics library also provides a function [`DistanceToSE3()`](https://github.com/NxRLab/ModernRobotics/blob/master/packages/MATLAB/mr/DistanceToSE3.m) that uses the Frobenius norm to compute a metric for how close $T_\mathrm{wb}$ is to $SE(3)$; from the plot above, $T_\mathrm{wb}$ stays in $SE(3)$ for all time.
