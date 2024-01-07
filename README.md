@@ -5,7 +5,7 @@ This repo demonstrates a "geometric integrator", i.e., a numerical integrator th
 This repo uses the [Modern Robotics code library](https://github.com/NxRLab/ModernRobotics) and much of the notation comes from [_Modern Robotics_](https://hades.mech.northwestern.edu/index.php/Modern_Robotics) by Kevin Lynch and Frank Park.
 I intend this repo to serve as an extension of certain topics in that text, mainly section 8.2.2 (twist-wrench formulation of the dynamics of a single rigid body).
 
-In this repo, I am using the geometric integrator proposed by Crouch and Grossman (J. Nonlinear Sci., 1993 - [DOI](https://doi.org/10.1007/BF02429858)) to simulate the motion of a rigid body in 3D space. See [docs/geometric_integration_rigid_body_dyn.pdf](docs/geometric_integration_rigid_body_dyn.pdf) for details.
+I coded up the geometric integrator proposed by Crouch and Grossman (J. Nonlinear Sci., 1993 - [DOI](https://doi.org/10.1007/BF02429858)) to simulate the motion of a rigid body in 3D space. See [docs/geometric_integration_rigid_body_dyn.pdf](docs/geometric_integration_rigid_body_dyn.pdf) for details. See [`cg4.m`](src/MATLAB/cg4.m) for implementation.
 
 ## Illustrative Results
 To test the CG4 integrator, I used the following parameters and initial conditions:
