@@ -41,7 +41,7 @@ t = t0:dt:tf;
 Twb{1} = Twb_init;
 Vb{1} = Vb_init;
 for k = 1:numel(t)-1
-    [~,Twb{k+1},Vb{k+1}] = cg4(dt,t(k),Twb{k},Vb{k},Fb,params);
+    [~,Twb{k+1},Vb{k+1}] = cg4(@rbdyn,dt,t(k),Twb{k},Vb{k},Fb,params);
 end
 
 %% Postprocess
